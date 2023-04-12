@@ -1,0 +1,95 @@
+.incomplete-container {
+  display: flex;
+  width: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.incomplete-container h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  width: 75%;
+  margin-right: 10px;
+}
+
+button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #ffd700;
+}
+
+.todo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+.todo span {
+  margin-right: 10px;
+}
+
+.todo button {
+  color: #fff;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.todo button:hover {
+  background-color: #ffd700;
+}
+
+/* Styles for mobile devices */
+@media only screen and (max-width: 600px) {
+  .incomplete-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .incomplete-container form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .incomplete-container input[type="text"] {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .incomplete-container button {
+    width: 100%;
+  }
+}

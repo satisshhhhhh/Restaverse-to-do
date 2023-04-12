@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.completed-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.completed h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.completed > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  width: 60%;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+.completed > div span {
+  margin-right: 10px;
+}
+
+.completed > div input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.completed > div button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.completed > div button:hover {
+  background-color: #ffd700;
+}
+
+.todo img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: transform 0.2s ease;
+}
+
+.todo img:hover {
+  transform: scale(1.2);
+}
+
+@media only screen and (max-width: 600px) {
+  .completed-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .completed-container div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .completed-container input[type="checkbox"] {
+    margin-right: 0;
+  }
+
+  .completed-container span {
+    margin-right: 0;
+  }
+
+  .completed-container button {
+    width: 100%;
+  }
+}
